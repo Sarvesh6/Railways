@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".LiveStatus.livestatus">
+
+    <EditText
+        android:layout_width="125dp"
+        android:layout_height="45dp"
+        android:id="@+id/e1"
+        android:hint="Train Number"
+        android:textColorHint="#125468"
+       />
+    <!--<Spinner-->
+        <!--android:id="@+id/spinner"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:id="@+id/date"
+        android:text="Start Date"
+
+        android:textColor="#050510"
+        android:textSize="20sp"
+
+        android:background="@drawable/buttonshape"
+android:layout_marginLeft="220dp"
+        ></Button>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/framelayout"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/go">
+
+    </FrameLayout>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:text="GO"
+        android:id="@+id/go"
+        android:textColor="#050510"
+        android:textSize="20sp"
+android:textStyle="bold"
+android:layout_marginTop="25dp"
+        android:background="@drawable/buttonshape"
+
+        android:layout_gravity="center_horizontal|top"
+        android:layout_below="@+id/date"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
